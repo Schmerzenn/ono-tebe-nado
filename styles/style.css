@@ -253,14 +253,13 @@
 }
 
 .footer{
-  padding: 4px 50px 88px 50px;
+  padding: 4px 50px 83px 50px;
   display: flex;
   justify-content: space-between;
   color: #000;
 }
 
 .footer .address{
-  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
