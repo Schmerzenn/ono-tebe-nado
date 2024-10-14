@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
@@ -41,36 +41,36 @@
       </address>
     </header>
     <main class="content">
-      <div class="cover overlay">
-        <section>
-          <h1 class="cover__title">
-            <span class="aligned-text"
-              >о<span class="letter-spacing-extended">но</span></span
-            >
-            <span class="aligned-text aligned-text_center"
-              >те<span class="letter-spacing-extended">бе</span></span
-            >
-            <span class="aligned-text aligned-text_right"
-              ><span class="letter-spacing-extended">н</span>ад<span
-                class="no-letter-spacing"
-                >о</span
-              ></span
-            >
-          </h1>
-        </section>
-        <section class="cover__description">
-          <h2 class="cover__description-text">
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text"
+            >о<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="aligned-text aligned-text_center"
+            >те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="aligned-text aligned-text_right"
+            ><span class="letter-spacing-extended">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
+          >
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
-          </h2>
+          </p>
           <button class="bet-button">Сделать ставку</button>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="lots">
-        <h3 class="lots__heading">Лоты</h3>
+        <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="#">
-              <article class="card card_type_film overlay">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -84,7 +84,8 @@
           </li>
           <li class="lots__card-list-item">
             <a href="#">
-              <article class="card card_type_book overlay">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -101,7 +102,8 @@
           </li>
           <li class="lots__card-list-item">
             <a href="#">
-              <article class="card card_type_picture overlay">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -126,8 +128,7 @@
               alt="Белый логотип проекта"
             />
           </div>
-
-          <h3 class="about__title">Об аукционе</h3>
+          <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -148,60 +149,58 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <address class="address header__address">
-            наб. Принсенграхт 263-<br />
-            265, Амстердам
-          </address>
-        </div>
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-list-item">
-              <a class="footer__menu-link_active">главная</a>
-            </li>
-            <li class="footer__menu-list-item">
-              <a href="#">посмотреть лоты</a>
-            </li>
-            <li class="footer__menu-list-item">
-              <a href="#">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <ul class="footer__social-list">
-            <li class="footer__social-list-item">
-              <a class="footer__social-link" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/yt.svg"
-                  alt="Иконка YouTube"
-                />
-              </a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="footer__social-link" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/vk.svg"
-                  alt="Иконка ВК"
-                />
-              </a>
-            </li>
-            <li class="footer__social-list-item">
-              <a class="footer__social-link" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/pinterest.svg"
-                  alt="Иконка Pinterest"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <address class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>
+          наб. Принсенграхт 263-<br />
+          265, Амстердам
+        </p>
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link_active">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="Иконка YouTube"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="Иконка ВК"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              alt="Иконка Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
